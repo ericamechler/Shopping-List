@@ -1,5 +1,14 @@
+import { useState } from "react";
+import { MyListsPage } from "./MyListsPage";
+
 export const HomePage = () => {
-  return <div>HomePage</div>;
+  const [hasLists, setHasLists] = useState(false);
+  return (
+    <div>
+      HomePage
+      <MyListsPage />
+    </div>
+  );
 };
 
-// Renders either ListsPage or CreateListPage based on whether the user has lists or not
+// Renders either ListsPage or StartPage based on whether the user has lists or not

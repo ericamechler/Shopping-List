@@ -1,5 +1,22 @@
+import myLists from "./myLists.json";
 export const MyListsPage = () => {
-  return <div>MyListsPage</div>;
+  return (
+    <div>
+      <h1>My lists</h1>
+      {myLists.lists.map((list) => (
+        <div key={list.id}>
+          <h3>{list.title}</h3>
+          <ul>
+            {list.items.map((item) => (
+              <li key={item.id}>
+                {item.name} - {item.quantity}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 // Displays the user's existing lists

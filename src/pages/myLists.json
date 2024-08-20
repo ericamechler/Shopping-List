@@ -1,0 +1,20 @@
+{
+  "lists": [
+    {
+      "id": "1",
+      "title": "Groceries",
+      "items": [
+        { "id": "a", "name": "Milk", "quantity": "1 liter" },
+        { "id": "b", "name": "Bread", "quantity": "2 loaves" }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Hardware",
+      "items": [
+        { "id": "c", "name": "Screwdriver", "quantity": "1" },
+        { "id": "d", "name": "Nails", "quantity": "100 pcs" }
+      ]
+    }
+  ]
+}
